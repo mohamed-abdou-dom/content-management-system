@@ -78,7 +78,6 @@ class LaratrustSeeder extends Seeder
                         'email' => $key.'@app.com',
                         'password' => bcrypt('password'),
                         'remember_token' => Str::random(10),
-                        'api_token' => bin2hex(openssl_random_pseudo_bytes(30))
                     ]);
                     $permissions = [];
 
@@ -112,7 +111,7 @@ class LaratrustSeeder extends Seeder
         Schema::disableForeignKeyConstraints();
         DB::table('permission_role')->truncate();
         DB::table('permission_user')->truncate();
-        DB::table('role_user')->truncate();
+        // DB::table('role_user')->truncate();
         \App\User::truncate();
         \App\Role::truncate();
         \App\Permission::truncate();
