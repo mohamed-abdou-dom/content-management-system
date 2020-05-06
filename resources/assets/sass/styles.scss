@@ -1,0 +1,60 @@
+// framework
+.flex-container{
+  margin: 10px 25px;
+}
+hr{
+  background-color: #fff !important;
+}
+.fa-edit{
+  font-size: 25px;
+  color: cadetblue;
+}
+.fa-eye{
+  font-size: 25px;
+  color: darkblue;
+}
+.fa-minus-circle{
+  font-size: 25px;
+  color: darkred;
+}
+.image .fa-file{
+  font-size: 35px;
+    position: relative;
+    top: 10px;
+    left: 19px;
+}
+
+// main navbar
+.navbar-item,.navbar-link{
+    color: #00D1B2;
+    font-weight: 500;
+}
+.navbar-dropdown .navbar-item:hover{
+    color:cadetblue !important;
+}
+.navbar-dropdown .navbar-item .icon{
+    font-size: 15px;
+    margin-right: 5px;
+}
+// manage aside menu
+.side-menu{
+  height: 100vh;
+  position: absolute;
+  width: 200px;
+  background-color: #fff;
+  // overflow-y: scroll;
+}
+.management-area{
+  position: absolute;
+  left: 200px;
+  right: 0;
+  background-color:#f4f3f4;
+  min-height: 100%;
+}
+// /////////////////////////////////////
+.postUrl{
+  margin: 0 0 20px 0;
+}
+.postUrl .slug{
+  background-color: yellow;
+}
