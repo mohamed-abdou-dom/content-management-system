@@ -1,12 +1,15 @@
 <?php
 
+use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-Route::prefix('manage')->middleware('role:superadministrator|administrator')->group(function(){
+Route::prefix('manage')->group(function(){
     Route::get('/','ManageController@index')->name('manage');
     Route::get('/dashboard','ManageController@dashboard')->name('manage.dashboard');
     Route::resource('/users','UserController');
