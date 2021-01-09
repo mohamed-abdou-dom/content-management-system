@@ -31,7 +31,6 @@ class PostController extends Controller
         $post->slug = $request->slug;
         $post->author_id = Auth::user()->id;
         $post->title = $request->title;
-        $post->excerpt = $request->content;
         $post->content = $request->content;
         $post->save();
         return redirect()->route('posts.create');
